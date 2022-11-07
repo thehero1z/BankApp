@@ -44,10 +44,9 @@ body{
 }
 
 
-.reg-btn{
+.submit-btn{
     background-color: #FF4E00;
     width: 200px;
-    color: white;
-    
+    color: white;    
     box-shadow: 0px 3px 6px rgb(0, 14, 53);
 }
