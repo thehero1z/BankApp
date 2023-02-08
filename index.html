@@ -4,47 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
     integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
     crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="Hover-master/css/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>BANK APP</title>
 </head>
-<body class="d-flex align-items-center">
-    
-    <!--- Card : Sample Text-->
-    <div id="sample-text-card" class="card col-6 bg-transparent border-0">
-        <!-- Card Body-->    
-        <div class="card-body"> 
-            <!-- Card Header-->     
-            <h1>OHENE INC.</h1>
-            <!-- End of Card Header-->
-            
-            <!-- Card Title-->
-            <h5 class="card-title">
-                Bank with Us
-            </h5>
-            <!-- End of Card Title-->
-            <!--Card Text-->
-            <p class="card-text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, maxime nobis! 
-            Iure vero modi dignissimos accusantium eaque maxime optio rerum, quidem nulla beatae 
-            ex cumque enim possimus minima voluptas. Cumque ea corporis, id voluptas harum, eos 
-            mollitia, unde repellat amet excepturi sequi odio placeat? 
-            Minus repellat quae assumenda excepturi reiciendis.
-            </p>
-            <!-- End of Card Text-->
 
-            <!-- Button Wrapper-->
-            <div class="button-wrapper d-flex align-items-center">
-                <a href="" class="btn btn-md register" role="button">Register</a>
-                <a href="" class="btn btn-md login" role="button">Login</a>
+    <body>
+        <header class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="container-fluid">
+                              <a class="navbar-brand hvr-glow" href="#">OH FINANCE</a>
+                              
+                              
+                                
+                                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                                <input class="menu-btn" type="checkbox" id="check" />
+                                <span class=" menu navbar-nav">
+                                
+                                  <li class="nav-item hvr-float"><a class="nav-link"  href="#home">Home</a> </li>
+                                  <li class="nav-item hvr-float"><a class="nav-link" href="#about">About</a> </li>
+                                  <li class="nav-item hvr-float"><a class="nav-link" href="#contact">Contact</a> </li>
+                                  <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                                </span>
+                                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                              </div>
+                            </div>
+                          </nav>
+                    </div>
+                </div>
             </div>
-            <!--Emd of Button Wrapper -->
-        </div>
-    <!-- End of Card Body-->
-    </div>
-</body>
+            </nav>
+         </header>
+         <section>
+            <div class="container text-center" id="home">
+                <div class="row">
+                    <div class="col-sm-12" data-aos="slide-right">
+                        <img class="img-fluid bt10 homepage-pic"  src="/img/main1.jpg "
+                    </div>
+                </div>
+            </div>
+         </section>
+         <section>
+            <div class="container-fluid text-center">
+                <div class="row ">
+                    <div class="col ">
+                        <h1 class="main ">
+                            Manage Your <span> Finance </span> <br> With Your <span>Pocket.</span>
+                        </h1>
+                    </div>
+                    <div class="col-lg-12">
+                        <h1 class="main1 text-center">
+                            Manage Your <span> Finance </span> With Your <span>Pocket.</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+                        <a href="signin.html"> <button type="button" class="btn  login hvr-sweep-to-right hvr-glow">Log In </button></a>
+                        
+                        <a href="signup.html">
+                        
+                            <button type="button"  class="btn btn-primary signup hvr-sweep-to-left hvr-glow">Sign Up</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <section>
+          <footer>
+
+          </footer>
+         </section>
+         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <script>
+           AOS.init();
+         </script> 
+        
+        
+        <script src="" async defer></script>
+    </body>
 </html>

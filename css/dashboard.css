@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: #dfe9f5;
+    height: 100vh;
+}
+:root{
+    /*Color*/
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: var(--sidebar-color);
+    width: 250px;
+    height: 100%;
+    padding: 10px 14px;
+}
+.sidebar .text{
+    font-size: 17px;
+    font-weight: 500;
+}
+.sidebar .image{
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.sidebar header .toggle{
+    position: absolute;
+    top: 40%;
+    right: -11px;
+    background-color:var(--primary-color);
+    transform: translateY(-50%);
+    height: 26px;
+    width: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--toggle-color);
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.sidebar .image-text img{
+    width: 76px;
+    border-radius: 10px;
+}
+
+.sidebar header .image-text{
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .menu{
+    margin-top: 40px;
+}
+.sidebar li a{
+    list-style: none;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: var(--tran-03);
+    padding-bottom: 60px;
+    color: var(--text-color);
+}
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text{
+    color: var(--primary-color);
+}
+.sidebar .bottom-content {
+    margin-top: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d0cbfd;
+   
+
+}
+.sidebar .profile-details{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+   
+}
+
+.sidebar .profile-details img{
+    height: 53px;
+    object-fit: cover;
+    border-radius: 20px;
+   margin-top: -9em;
+   margin-left: -4em;
+   border: 2px solid #d0cbfd;
+   padding: 3px;
+   cursor: pointer;
+   
+}
+.sidebar .profile-name{
+ margin-top: -4.5em;
+ font-size: 18px;
+ font-weight: 500;
+ cursor: pointer;
+}
+.sidebar .profile-details .profile-content{
+    display: flex;
+    align-items: center;
+}
+.sidebar .log-out{
+    display: flex;
+    align-items: center;
+    position: absolute;
+   right: -38px;
+   top: -3px;
+   font-size: 23px;
+   font-weight: 500;
+   cursor: pointer;
+}
+
+@media only screen and (min-device-width : 375px){
+    .sidebar .profile-details img{
+        height: 50px;
+        object-fit: cover;
+        border-radius: 20px;
+       margin-top: -1em;
+       margin-left: -4em;
+       border: 2px solid #d0cbfd;
+       padding: 3px;
+       cursor: pointer;
+    }
+    .sidebar .profile-name{
+     margin-top: -1em;
+     font-size: 18px;
+     font-weight: 500;
+     cursor: pointer;
+    }
+    .sidebar header .toggle{
+    position: absolute;
+    top: 53%;
+    right: -11px;
+    background-color:var(--primary-color);
+    transform: translateY(-50%);
+    height: 26px;
+    width: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--toggle-color);
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    }
+}
