@@ -92,10 +92,12 @@ body{
     padding-bottom: 60px;
     color: var(--text-color);
 }
-.sidebar li a:hover .icon,
-.sidebar li a:hover .text{
-    color: var(--primary-color);
+.sidebar a:hover{
+    background-color: var(--primary-color);
+    color: #FFF;
 }
+
+
 .sidebar .bottom-content {
     margin-top: 4em;
     display: flex;
