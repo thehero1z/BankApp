@@ -56,15 +56,19 @@ body{
 .brand{
     font-family: 'Rubik Iso', cursive;
     color: var(--white);
-    font-size: 35px;
-    margin-bottom: 40px;
-    pointer-events: none;
+    font-size: 30px;
+    margin-bottom: 50px;
+    pointer-events:none;
     text-align: center;
+   
 }
 
-.navigation ul li:nth-child(1):hover{
-    background-color: var(--main-color);
+
+ .navigation  ul li:nth-child(1){
+    background-color: transparent;
+    pointer-events: none;
 }
+ 
 .navigation ul li a {
     position: relative;
     display: block;
@@ -98,6 +102,33 @@ font-size: 1.75rem;
     line-height: 60px;
     text-align: start;
     white-space: nowrap;
+
+}
+.navigation ul li:hover a::before,
+.navigation ul li.hovered a::before{
+    content: '';
+    position: absolute;
+    right:0;
+    top: -50px;
+    width:50px;
+    height:50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px var(--white);
+    pointer-events: none;
+}
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::after{
+    content: '';
+    position: absolute;
+    right:0;
+    bottom: -50px;
+    width:50px;
+    height:50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px var(--white);
+    pointer-events: none;
 }
 
 /* main */
