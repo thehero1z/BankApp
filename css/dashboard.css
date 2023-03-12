@@ -1,11 +1,11 @@
 :root{
     --main-color:#9087f8;
     --color-dark:#1d2231;
-    --text-grey:#8398a2;
-    --text-white:#f3efef;
+    --text-grey:#666767;
+    --text-white:#f1eeee;
     --white:#ffff;
-    --main-dark:#9087f3
-
+    --main-dark:#6f62f6
+    
 }
 
 /* css reset */
@@ -32,9 +32,16 @@ body{
     width:300px;
     height:100%;
     background:var(--main-color);
-    border-left:10px solid #6255fb ;
+    border-left:10px solid #887ff0 ;
     transition: 0.5s;
     overflow: hidden;
+}
+.navigation.active{
+    width:71px;
+}
+.main.active{
+    width: calc(100% - 80px);
+    left: 80px; 
 }
 .navigation ul{
     position:absolute;
@@ -196,4 +203,49 @@ font-size: 1.75rem;
     left: 0;
     width:100%;
     object-fit:cover;
+}
+/* cards */
+.cardBox{
+     position: relative;
+     width: 100%;
+     padding: 20px;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 30px;
+}
+.cardBox .card{
+    position: relative;
+    background-color: var(--text-white);
+    padding: 30px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.cardBox .card .numbers{
+    position: relative;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Poppins',sans-serif;
+    color: var(--main-color);
+
+}
+.cardBox .card .cardname{
+    color: var(--text-grey);
+    font-size: .8rem;
+    margin-top: 5px;
+    font-family: 'Montserrat',sans-serif;
+}
+.cardBox .card .iconbox{
+   font-size: 1.2rem;
+   color: var(--main-dark);
+}
+.cardBox .card:hover{
+    background-color: var(--main-dark);
+}
+.cardBox .card:hover .iconbox,
+.cardBox .card:hover .cardname,
+.cardBox .card:hover .numbers{
+    color: var(--text-white);
 }

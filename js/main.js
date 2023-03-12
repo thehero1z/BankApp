@@ -9,10 +9,11 @@ function activeLink(){
 list.forEach((item) => item.addEventListener("mouseover", activeLink));
 
 // Menu Toggle
-let toggle = document.querySelectorAll(".toggle");
+let toggle = document.querySelector(".toggle");
 let navigation = document.querySelector(".navigation");
 let main = document.querySelector(".main");
 
-toggle.onClick = function(){
+toggle.onclick = function () {
     navigation.classList.toggle("active");
+    main.classList.toggle("active");
 };
