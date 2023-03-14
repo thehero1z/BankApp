@@ -14,4 +14,19 @@ public class IndexController {
         System.out.println("In Index Controller");
         return getIndexPage;
     }
+    @GetMapping("/signin")
+    public ModelAndView getSignIn(){
+        ModelAndView getSignInPage = new ModelAndView("signin");
+        getSignInPage.addObject("PageTitle", "SignIn");
+        System.out.println("In SignIn Controller");
+        return getSignInPage;
+    }
+
+    @GetMapping("/signup")
+    public ModelAndView getSignUp(){
+        ModelAndView getSignUpPage = new ModelAndView("signup");
+        getSignUpPage.addObject("PageTitle", "SignUp");
+        System.out.println("In SignUp Controller");
+        return getSignUpPage;
+    }
 }
