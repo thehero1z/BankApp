@@ -313,27 +313,27 @@ font-family: 'Montserrat',sans-serif;
     color: var(--white);
     background: #45f145;
     padding: 2px 4px;
-    border-radius: 2px;
+    border-radius: 3px;
     font-weight: 600;
 }
 .status.processing{
     color: var(--white);
     background: #b6cbf2;
     padding: 2px 4px;
-    border-radius: 2px;
+    border-radius: 3px;
     font-weight: 600;
 }
 .status.review{
     color: var(--white);
     background: #facab5;
     padding: 2px 4px;
-    border-radius: 2px;
+    border-radius: 3px;
     font-weight: 600;
 }
 .status.failed{
     color: var(--white);
     background: #f41616;
     padding: 2px 4px;
-    border-radius: 2px;
+    border-radius: 3px;
     font-weight: 600;
 }
