@@ -290,3 +290,22 @@ font-family: 'Montserrat',sans-serif;
 .details .recentTransactions table tr {
     border-bottom: 1px solid rgba(0,0,0,0.08);
 }
+.details .recentTransactions table tr:last-child{
+    border-bottom: none;
+}
+.details .recentTransactions table tbody tr:hover{
+    color:white;
+    background-color: var(--main-dark);
+}
+.details .recentTransactions table tr td{
+    padding: 10px;
+}
+.details .recentTransactions table tr td:last-child{
+    text-align: end;
+}
+.details .recentTransactions table tr td:nth-child(2){
+    text-align: center;
+}
+.details .recentTransactions table tr td:nth-child(3){
+    text-align: center;
+}
