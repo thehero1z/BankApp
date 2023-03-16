@@ -249,3 +249,44 @@ font-size: 1.75rem;
 .cardBox .card:hover .numbers{
     color: var(--text-white);
 }
+/* Recent Transactions */
+.details{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap:30px;
+
+}
+.details .recentTransactions{
+    position: relative;
+    display: grid;
+     min-height: 500px;
+     background: var(--text-white);
+     padding: 20px;
+     box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+     border-radius: 20px;
+}
+.details .cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cardHeader h2{
+    font-weight:600;
+    font-family: 'Montserrat',sans-serif;
+    color: var(--main-color );
+}
+.details table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.details table thead td{
+font-weight: 600;
+font-family: 'Montserrat',sans-serif;
+}
+.details .recentTransactions table tr {
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
