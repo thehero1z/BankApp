@@ -416,4 +416,8 @@ height: 100%;
     overflow: auto;
 }
 }
-@media (max-width:)
+@media (max-width:480px){
+    .cardBox{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
