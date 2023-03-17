@@ -426,4 +426,16 @@ height: 100%;
     .cardBox .card{
         font-size: 20px;
     }
+    .user{
+        min-width: 40px;
+    }
+    .navigation{
+        width: 100%;
+        left: -100%;
+        z-index: 1000;
+    }
+    .navigation.active{
+        width: 100%;
+        left: 0;
+    }
 }
