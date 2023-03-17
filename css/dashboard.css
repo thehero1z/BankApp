@@ -435,20 +435,24 @@ height: 100%;
         left: -100%;
         z-index: 1000;
        
+       
     }
     .navigation.active{
         width: 100%;
         left: 0;
+        height: 100%;
         
     }
+   
     .toggle{
         z-index: 10001;
         
     }
-    .main.active.toggle{
+    .main.active .toggle{
         position: fixed;
-        right: 0;
         left: initial;
-       color: #ffff;
+        right: initial;
+        color: #ffff;
     }
+    
 }
