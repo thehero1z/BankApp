@@ -2,7 +2,7 @@
     --main-color:#9087f8;
     --color-dark:#1d2231;
     --text-grey:#666767;
-    --text-white:#f1eeee;
+    --text-white:#f8f3f3;
     --white:#ffff;
     --main-dark:#6f62f6
     
@@ -325,7 +325,7 @@ font-family: 'Montserrat',sans-serif;
 }
 .status.review{
     color: var(--white);
-    background: #facab5;
+    background: #ebcd69;
     padding: 2px 4px;
     border-radius: 3px;
     font-weight: 600;
