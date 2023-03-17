@@ -338,9 +338,82 @@ font-family: 'Montserrat',sans-serif;
 }
 .status.failed{
     color: var(--white);
-    background: #f37a7a;
+    background: #f97373;
     padding: 2px 4px;
     border-radius: 3px;
     font-family: 'Montserrat',sans-serif;
     font-size: 14px;
 }
+/* Recent Transfers */
+.recentTransfers{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    padding: 20px;
+    background: var(--text-white);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border-radius: 10px;
+}
+.recentTransfers .imgBox{
+position: relative;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+overflow: hidden;
+}
+.recentTransfers .imgBox img{
+position: absolute;
+top: 0;
+left: 0;
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+.recentTransfers table tr:hover{
+    color: var(--white);
+    background-color: var(--main-dark);
+}
+.recentTransfers table tr td{
+ padding: 12px 10px;
+}
+.recentTransfers table tr td h4{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1rem;
+
+}
+.recentTransfers table tr td span{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Montserrat',sans-serif;
+}
+
+/* //////////////////////// Media Queries ///////////////////////////// */
+@media (max-width: 991px){
+    .navigation{
+        left: -300px;
+    }
+    .navigation.active{
+        width: 300px;
+        left: 0;
+    }
+    .main{
+     width: 100%;
+     left: 0;
+    }
+    .main.active{
+        left: 300px;
+    }
+    .cardBox{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 778px){
+.details{
+    grid-template-columns: 1fr;
+}
+.recentTransactions{
+    overflow: auto;
+}
+}
+@media (max-width:)
