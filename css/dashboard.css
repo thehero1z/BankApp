@@ -2,7 +2,7 @@
     --main-color:#9087f8;
     --color-dark:#1d2231;
     --text-grey:#666767;
-    --text-white:#f8f3f3;
+    --text-white:#ffffff;
     --white:#ffff;
     --main-dark:#6f62f6
     
@@ -297,6 +297,9 @@ font-family: 'Montserrat',sans-serif;
     color:white;
     background-color: var(--main-dark);
 }
+.details .recentTransactions table tbody tr{
+    font-family: 'Montserrat',sans-serif;
+}
 .details .recentTransactions table tr td{
     padding: 10px;
 }
@@ -314,26 +317,30 @@ font-family: 'Montserrat',sans-serif;
     background: #45f145;
     padding: 2px 4px;
     border-radius: 3px;
-    font-weight: 600;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
 }
 .status.processing{
     color: var(--white);
     background: #b6cbf2;
     padding: 2px 4px;
     border-radius: 3px;
-    font-weight: 600;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
 }
 .status.review{
     color: var(--white);
     background: #ebcd69;
     padding: 2px 4px;
     border-radius: 3px;
-    font-weight: 600;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
 }
 .status.failed{
     color: var(--white);
-    background: #f41616;
+    background: #f37a7a;
     padding: 2px 4px;
     border-radius: 3px;
-    font-weight: 600;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
 }
