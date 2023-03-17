@@ -453,6 +453,9 @@ height: 100%;
         left: initial;
         right: initial;
         color: #ffff;
+        margin-left: 16px;
     }
-    
+    .brand{
+        margin-top: 16px;
+    }
 }
