@@ -420,4 +420,10 @@ height: 100%;
     .cardBox{
         grid-template-columns: repeat(1,1fr);
     }
+    .cardHeader h2{
+        font-size: 20px;
+    }
+    .cardBox .card{
+        font-size: 20px;
+    }
 }
