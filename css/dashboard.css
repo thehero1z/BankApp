@@ -433,9 +433,21 @@ height: 100%;
         width: 100%;
         left: -100%;
         z-index: 1000;
+       
     }
     .navigation.active{
         width: 100%;
         left: 0;
+        
+    }
+    .toggle{
+        z-index: 10001;
+        
+    }
+    .main.active .toggle{
+        right: 209px;
+        position: fixed;
+        /* left: initial; */
+       color: #ffff;
     }
 }
