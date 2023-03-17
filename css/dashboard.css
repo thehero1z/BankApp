@@ -459,3 +459,46 @@ height: 100%;
         margin-top: 16px;
     }
 }
+@media (max-width:600px){
+    .cardBox{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .cardHeader h2{
+        font-size: 20px;
+    }
+    .cardBox .card{
+        font-size: 20px;
+    }
+    .user{
+        min-width: 40px;
+    }
+    .navigation{
+        width: 100%;
+        left: -100%;
+        z-index: 1000;
+       
+       
+    }
+    .navigation.active{
+        width: 100%;
+        left: 0;
+        height: 100%;
+        
+    }
+   
+    .toggle{
+        z-index: 10001;
+        
+    }
+    .main.active .toggle{
+        position: fixed;
+        left: initial;
+        right: initial;
+        color: #ffff;
+        margin-left: 16px;
+    }
+    .brand{
+        margin-top: 16px;
+    }
+}
+
