@@ -64,7 +64,7 @@ body{
     font-family: 'Rubik Iso', cursive;
     color: var(--white);
     font-size: 30px;
-    margin-bottom: 50px;
+    
     pointer-events:none;
     text-align: center;
    
@@ -74,6 +74,7 @@ body{
  .navigation  ul li:nth-child(1){
     background-color: transparent;
     pointer-events: none;
+    margin-bottom: 40px;
 }
  
 .navigation ul li a {
@@ -405,7 +406,7 @@ height: 100%;
         left: 300px;
     }
     .cardBox{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
 }
 @media (max-width: 778px){
@@ -444,10 +445,10 @@ height: 100%;
         z-index: 10001;
         
     }
-    .main.active .toggle{
-        right: 209px;
+    .main.active.toggle{
         position: fixed;
-        /* left: initial; */
+        right: 0;
+        left: initial;
        color: #ffff;
     }
 }
