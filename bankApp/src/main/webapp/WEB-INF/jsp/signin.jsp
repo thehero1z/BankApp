@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> OH Finance Sign In </title>
+    <title> G6 Finance Sign In </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/signup.css">
@@ -21,7 +21,7 @@
             <div class="col-xl-12">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                        <a class="navbar-brand hvr-glow" href="#">OH FINANCE</a>
+                        <a class="navbar-brand hvr-glow" href="#">G6 FINANCE</a>
                         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                         <input class="menu-btn" type="checkbox" id="check">
                         <span class=" menu navbar-nav">
@@ -65,7 +65,7 @@
                             <button type="button"  class="btn btn-primary signup hvr-sweep-to-left hvr-glow" id="form"> Log In </button>
                         </a>
                         <p class="card-text" >
-                            &nbsp &nbsp Don't Have An Account? <span class="ms-2 text-primary"><a href="signup.html" class="text-primary" style="text-decoration: none;">Sign Up</a></span>
+                            &nbsp &nbsp Don't Have An Account? <span class="ms-2 text-primary"><a href="/signup" class="text-primary" style="text-decoration: none;">Sign Up</a></span>
                         </p>
                 </form>
             </div>

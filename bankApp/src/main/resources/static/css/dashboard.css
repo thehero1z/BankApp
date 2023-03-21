@@ -2,10 +2,10 @@
     --main-color:#9087f8;
     --color-dark:#1d2231;
     --text-grey:#666767;
-    --text-white:#f1eeee;
+    --text-white:#ffffff;
     --white:#ffff;
     --main-dark:#6f62f6
-    
+
 }
 
 /* css reset */
@@ -41,7 +41,7 @@ body{
 }
 .main.active{
     width: calc(100% - 80px);
-    left: 80px; 
+    left: 80px;
 }
 .navigation ul{
     position:absolute;
@@ -64,18 +64,19 @@ body{
     font-family: 'Rubik Iso', cursive;
     color: var(--white);
     font-size: 30px;
-    margin-bottom: 50px;
+
     pointer-events:none;
     text-align: center;
-   
+
 }
 
 
- .navigation  ul li:nth-child(1){
+.navigation  ul li:nth-child(1){
     background-color: transparent;
     pointer-events: none;
+    margin-bottom: 40px;
 }
- 
+
 .navigation ul li a {
     position: relative;
     display: block;
@@ -86,19 +87,19 @@ body{
 }
 .navigation ul li:hover a{
     color: var(--main-dark);
-} 
+}
 .navigation ul li.hovered a {
-    color: var(--main-dark); 
+    color: var(--main-dark);
 }
 .navigation ul li a .icon{
     display: block;
     position: relative;
-     min-width: 60px;
-     line-height: 75px;
-     text-align: center;
+    min-width: 60px;
+    line-height: 75px;
+    text-align: center;
 }
 .navigation ul li a .icon ion-icon {
-font-size: 1.75rem;
+    font-size: 1.75rem;
 }
 .navigation ul li a .title{
     position: relative;
@@ -180,7 +181,7 @@ font-size: 1.75rem;
     font-size: 18px;
     outline: none;
     border: 1px solid var(--color-dark);
-     
+
 }
 .search label ion-icon{
     position: absolute;
@@ -206,12 +207,12 @@ font-size: 1.75rem;
 }
 /* cards */
 .cardBox{
-     position: relative;
-     width: 100%;
-     padding: 20px;
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     grid-gap: 30px;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
 }
 .cardBox .card{
     position: relative;
@@ -238,8 +239,8 @@ font-size: 1.75rem;
     font-family: 'Montserrat',sans-serif;
 }
 .cardBox .card .iconbox{
-   font-size: 1.2rem;
-   color: var(--main-dark);
+    font-size: 1.2rem;
+    color: var(--main-dark);
 }
 .cardBox .card:hover{
     background-color: var(--main-dark);
@@ -249,3 +250,255 @@ font-size: 1.75rem;
 .cardBox .card:hover .numbers{
     color: var(--text-white);
 }
+/* Recent Transactions */
+.details{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap:30px;
+
+}
+.details .recentTransactions{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    background: var(--text-white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border-radius: 20px;
+}
+.details .cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cardHeader h2{
+    font-weight:600;
+    font-family: 'Montserrat',sans-serif;
+    color: var(--main-color );
+}
+.details table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.details table thead td{
+    font-weight: 600;
+    font-family: 'Montserrat',sans-serif;
+}
+.details .recentTransactions table tr {
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+.details .recentTransactions table tr:last-child{
+    border-bottom: none;
+}
+.details .recentTransactions table tbody tr:hover{
+    color:white;
+    background-color: var(--main-dark);
+}
+.details .recentTransactions table tbody tr{
+    font-family: 'Montserrat',sans-serif;
+}
+.details .recentTransactions table tr td{
+    padding: 10px;
+}
+.details .recentTransactions table tr td:last-child{
+    text-align: end;
+}
+.details .recentTransactions table tr td:nth-child(2){
+    text-align: center;
+}
+.details .recentTransactions table tr td:nth-child(3){
+    text-align: center;
+}
+.status.processed{
+    color: var(--white);
+    background: #45f145;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+}
+.status.processing{
+    color: var(--white);
+    background: #b6cbf2;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+}
+.status.review{
+    color: var(--white);
+    background: #ebcd69;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+}
+.status.failed{
+    color: var(--white);
+    background: #f97373;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+}
+/* Recent Transfers */
+.recentTransfers{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    padding: 20px;
+    background: var(--text-white);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border-radius: 10px;
+}
+.recentTransfers .imgBox{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.recentTransfers .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.recentTransfers table tr:hover{
+    color: var(--white);
+    background-color: var(--main-dark);
+}
+.recentTransfers table tr td{
+    padding: 12px 10px;
+}
+.recentTransfers table tr td h4{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1rem;
+
+}
+.recentTransfers table tr td span{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Montserrat',sans-serif;
+}
+
+/* //////////////////////// Media Queries ///////////////////////////// */
+@media (max-width: 991px){
+    .navigation{
+        left: -300px;
+    }
+    .navigation.active{
+        width: 300px;
+        left: 0;
+    }
+    .main{
+        width: 100%;
+        left: 0;
+    }
+    .main.active{
+        left: 300px;
+    }
+    .cardBox{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width: 778px){
+    .details{
+        grid-template-columns: 1fr;
+    }
+    .recentTransactions{
+        overflow: auto;
+    }
+}
+@media (max-width:480px){
+    .cardBox{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .cardHeader h2{
+        font-size: 20px;
+    }
+    .cardBox .card{
+        font-size: 20px;
+    }
+    .user{
+        min-width: 40px;
+    }
+    .navigation{
+        width: 100%;
+        left: -100%;
+        z-index: 1000;
+
+
+    }
+    .navigation.active{
+        width: 100%;
+        left: 0;
+        height: 100%;
+
+    }
+
+    .toggle{
+        z-index: 10001;
+
+    }
+    .main.active .toggle{
+        position: fixed;
+        left: initial;
+        right: initial;
+        color: #ffff;
+        margin-left: 16px;
+    }
+    .brand{
+        margin-top: 16px;
+    }
+}
+@media (max-width:600px){
+    .cardBox{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .cardHeader h2{
+        font-size: 20px;
+    }
+    .cardBox .card{
+        font-size: 20px;
+    }
+    .user{
+        min-width: 40px;
+    }
+    .navigation{
+        width: 100%;
+        left: -100%;
+        z-index: 1000;
+
+
+    }
+    .navigation.active{
+        width: 100%;
+        left: 0;
+        height: 100%;
+
+    }
+
+    .toggle{
+        z-index: 10001;
+
+    }
+    .main.active .toggle{
+        position: fixed;
+        left: initial;
+        right: initial;
+        color: #ffff;
+        margin-left: 16px;
+    }
+    .brand{
+        margin-top: 16px;
+    }
+}
+

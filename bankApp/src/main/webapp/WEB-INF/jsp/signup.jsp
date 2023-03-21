@@ -1,9 +1,13 @@
+<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> OH Finance Sign Up </title>
+    <title> G6 Finance Sign Up </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/signup.css">
@@ -12,7 +16,7 @@
           integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
           crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="Hover-master/css/hover-min.css">
+    <link rel="stylesheet" href="css/Hover-master/css/hover-min.css">
 </head>
 <body>
 <header class="header">
@@ -21,7 +25,7 @@
             <div class="col-xl-12">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                        <a class="navbar-brand hvr-glow" href="#">OH FINANCE</a>
+                        <a class="navbar-brand hvr-glow" href="#">G6 FINANCE</a>
 
 
 
@@ -57,7 +61,7 @@
 
             <div class="container-fluid bt10 formholder" >
 
-                <form action="action_page.php" >
+                <form:form action="action_page.php" modelattribute="registerUser">
                     <div class="container-fluid">
 
 
@@ -66,14 +70,24 @@
 
                         <label for="lname"></label>
                         <input type="text"  class="form-control" id="lname" name="lastname" placeholder="Last Name">
+
+                        <label class="idnat"></label>
+                        <input type="text" class="form-control" placeholder="Enter your National ID number"/>
+
+                        <label class="pnumber"></label>
+                        <input type="text" class="form-control" placeholder="Enter your phone number"/>
+
                         <label for="e-mail"></label>
                         <input type="text"  class="form-control" id="e-mail" name="e-mail" placeholder="Enter Your E-Mail">
 
-
                         <label class="password"></label>
                         <input type="password" class="form-control" placeholder="Password"/>
+
                         <label class="password"></label>
                         <input type="password" class="form-control" placeholder="Confirm Password"/>
+
+                        <label class="pnumber"></label>
+                        <input type="text" class="form-control" placeholder="Enter your phone number"/>
 
 
 
@@ -88,9 +102,9 @@
                             <button type="button"  class="btn btn-primary signup hvr-sweep-to-left hvr-glow"> Create Account</button>
                         </a>
                         <p class="card-text">
-                            &nbsp &nbsp Already have an account? <span class="ms-2 text-primary"><a href="signin.html" class="text-primary" style="text-decoration: none;">Sign In</a></span>
+                            &nbsp &nbsp Already have an account? <span class="ms-2 text-primary"><a href="/signin" class="text-primary" style="text-decoration: none;">Sign In</a></span>
                         </p>
-                </form>
+                </form:form>
             </div>
         </div>
     </div>

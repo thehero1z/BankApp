@@ -22,11 +22,20 @@ public class IndexController {
         return getSignInPage;
     }
 
+
     @GetMapping("/signup")
     public ModelAndView getSignUp(){
         ModelAndView getSignUpPage = new ModelAndView("signup");
         getSignUpPage.addObject("PageTitle", "SignUp");
         System.out.println("In SignUp Controller");
         return getSignUpPage;
+    }
+
+    @GetMapping("/dashboard")
+    public ModelAndView getDashboard(){
+        ModelAndView getDashboardPage = new ModelAndView("dashboard");
+        getDashboardPage.addObject("PageTitle", "Dashboard");
+        System.out.println("In Dashboard Controller");
+        return getDashboardPage;
     }
 }

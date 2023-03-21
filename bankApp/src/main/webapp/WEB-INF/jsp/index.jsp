@@ -23,7 +23,7 @@
             <div class="col-xl-12">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                        <a class="navbar-brand hvr-glow" href="#">G6 FINANCE</a>
+                        <a class="navbar-brand hvr-glow" href="#">OH FINANCE</a>
 
                         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                         <input class="menu-btn" type="checkbox" id="check">
@@ -65,8 +65,8 @@
     <div class="container text-center">
         <div class="row">
             <div class="col-lg-12">
-                <a href="/signin.html"> <button type="button" class="btn  login  hvr-glow">Log In </button></a>
-                <a href="/signup.html">
+                <a href="/signin"> <button type="button" class="btn  login  hvr-glow">Log In </button></a>
+                <a href="/signup">
                     <button type="button"  class="btn btn-primary signup  hvr-glow">Sign Up</button>
                 </a>
             </div>

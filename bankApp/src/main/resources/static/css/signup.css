@@ -29,6 +29,7 @@ input[type=text], select, textarea {
   cursor: pointer;
   margin-top: 0.1em;
 }
+
 input[type=password]{
     display: flex;
     /* Full width */
@@ -40,10 +41,12 @@ input[type=password]{
     margin-bottom: 10px; /* Bottom margin */
     resize: vertical;
 }
+
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: #6e6ef3;
 }
+
 button.signup{
     background-color: #4343FF;
     font-family: 'Poppins',sans-serif;
